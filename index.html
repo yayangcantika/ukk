@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" name="nameform">
+        <input class="value" name="nameinput" readonly placeholder="0">
+        <span class="num clear" onclick="nameform.nameinput.value = ''">C</span>
+        <span class="num" onclick="nameform.nameinput.value =nameform.nameinput.value.slice(0,-1)">DEL</span>
+        <span class="num" onclick="nameform.nameinput.value += '/'">/</span>
+        <span class="num" onclick="nameform.nameinput.value += '*'">*</span>
+        <span class="num" onclick="nameform.nameinput.value += '7'">7</span>
+        <span class="num" onclick="nameform.nameinput.value += '8'">8</span>
+        <span class="num" onclick="nameform.nameinput.value += '9'">9</span>
+        <span class="num" onclick="nameform.nameinput.value += '-'">-</span>
+        <span class="num" onclick="nameform.nameinput.value += '6'">6</span>
+        <span class="num" onclick="nameform.nameinput.value += '5'">5</span>
+        <span class="num" onclick="nameform.nameinput.value += '4'">4</span>
+        <span class="num" onclick="nameform.nameinput.value += '+'">+</span>
+        <span class="num" onclick="nameform.nameinput.value += '1'">1</span>
+        <span class="num" onclick="nameform.nameinput.value += '2'">2</span>
+        <span class="num" onclick="nameform.nameinput.value += '3'">3</span>
+        <span class="equal" onclick="nameform.nameinput.value =eval(nameform.nameinput.value)">=</span>
+        <span class="num" onclick="nameform.nameinput.value += '0'">0</span>
+        <span class="num" onclick="nameform.nameinput.value += '00'">00</span>
+        <span class="num" onclick="nameform.nameinput.value += ','">,</span>
+    </form>
+</body>
+</html>
